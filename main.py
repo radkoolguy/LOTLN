@@ -110,7 +110,6 @@ player_list = pygame.sprite.Group()
 player_list.add(player)
 enemy_list = pygame.sprite.Group()
 enemy_list.add(enemy)
-
 '''
 Main Loop
 '''
@@ -204,4 +203,4 @@ while run:
     screen.blit(hittext, hitrect)
     player_list.draw(screen)
     enemy_list.draw(screen)
-    pygame.display.update()
+    pygame.display.flip()
